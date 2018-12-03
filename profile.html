@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Blog Home - Start Bootstrap Template</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/blog-home.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href="css/profile.css" rel="stylesheet">
+
+  <style>
+    .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+</style>
+
+</head>
+
+<body onload="fetchPosts()">
+
+  <!-- Navigation -->
+  <div id="wrapper" class="animate">
+      <nav class="navbar header-top fixed-top navbar-expand-lg  navbar-dark" style="background-color:#39317b">
+        <span class="navbar-toggler-icon leftmenutrigger"></span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav animate side-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="profile.html">Profile</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ml-md-auto d-md-flex">
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Sign out
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <div class="row">
+
+      <!-- Blog Entries Column -->
+      <div class="col-md-8">
+
+        <h1 class="my-4">My Articles
+          <small></small>
+        </h1>
+        <div class="posts">
+            <div class="article">
+                <p ><img src="http://placekitten.com/g/200/200" height="200px" width="200px" border="1px"></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed elit ligula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In maximus</p>
+                <p><img src="images/nat1.png" height="200px" width="200px" border="1px"></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed elit ligula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In maximus </p>
+                <p><img src="images/nat1.png" height="200px" width="200px" border="1px"></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed elit ligula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In maximus </p>
+            </div>
+        </div>
+
+        <!-- Blog Post -->
+        <div id="post"></div>
+
+        <!-- Pagination -->
+        <ul class="pagination justify-content-center mb-4">
+          <li class="page-item">
+          </li>
+          <li class="page-item disabled">
+
+          </li>
+        </ul>
+
+      </div>
+
+      <!-- Sidebar Widgets Column -->
+      <div class="col-md-4">
+        <div class="profile">
+        <!-- Search Widget -->
+        <div class="card my-4">
+          <div class="head">
+          <h5 class="card-header">My Profile <img src="images/edit.png" alt="edit" class="edit"></h5>
+          <div class="card-body">
+            <div class="input-group"></div>
+              <img src="images/my_profile.png" class="image">
+              <center><h3>James Bond</h3>
+              <p class="contents">Email:bond@mail.com<br>
+               Username: James<br>
+              Bio: I am all about postive energy in sharing infromation</p></center>
+            </div>
+          </div>
+          <a href="profiles.html" style="font-size:10px;">Click here to view all profiles</a>
+        </div>
+        </div>
+      </div>
+    </div>
+
+      <!-- Categories Widget -->
+      <div class="card my-4">
+
+
+      </div>
+
+      <!-- Side Widget -->
+
+
+    </div>
+
+  </div>
+  <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <br><br><br><br><br><br><br>
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; ah-orcas 2018</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+<!-- <script src="fetchPosts.js"></script> -->
+
+</html>
